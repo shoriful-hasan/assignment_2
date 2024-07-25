@@ -3,8 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    
-}
+    box-sizing: border-box;}
 :root{
     --back-color-1:#E6533C;
     --bac-color-2:#1F1F1F;
@@ -37,14 +36,29 @@
 /* header css start here */
 .header{
     width: 100%;
-    height: 90vh;
-    background-color:var(--bac-color-2) ;
+    /* height: 100vh; */
+    height: 100%;
+    background-color:var(--bac-color-2);
+   
 }
+/* 
+.header-wrapper-bound{
+    width: 100%;
+    height: 100%;
+ 
+} */
+
+
 
 .header-rapper{
-    max-width: 1240px;
+    max-width:100%;
+    /* height: 100%; */
+    background-color:var(--bac-color-2);
     margin: 0 auto;
-   
+  
+}
+.nav{
+    padding: 0 40px;
 }
 
 .nav-menu-rapper{
@@ -95,10 +109,484 @@ display: none;
     font-size: 18px;
     font-family: "inter";
 }
+/* navber design end here */
+
+/* banner-content css design start here */
+.banner-content{
+   max-width: 992px;
+   margin:0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.banner-content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.extra{
+    font-family: "Dancing Script";
+}
+
+.ban-content-left-getbody{
+    font-family: "inter";
+    text-transform: capitalize;
+    font-weight: 700;
+    color: white;
+    font-size: 52px;
+}
+.ban-content-left-huge{
+    color: var(--font-color-3);
+}
+.banner-left-content-btn-wrapper{
+    display: flex;
+    gap: 30px;
+}
+.left-btn{
+width: 170px;
+height: 40px;
+border-radius: 30px;
+border: none;
+text-transform: capitalize;
+background-color: var(--back-color-1);
+color: var(--font-color-2);
+font-weight: 600;
+}
+.right-btn{
+    width: 170px;
+    height: 40px;
+    border-radius: 30px;
+border: 1px solid var(--font-color-2);
+text-transform: capitalize;
+background: none;
+color: var(--font-color-2);
+}
+.banner-content-right{
+ 
+ position: relative;
+}
+.right-top-btn button{
+    position: absolute;
+    top:80px;
+    left: 250px;
+    width: 193px;
+    height: 98px;
+    border-radius: 12px;
+    border: none;
+background-color: rgba(255,255,255,0.1);
+backdrop-filter: blur(80px);
+color: rgba(255,255,255,0.65);
+border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-spn{
+    font-size: 40px;
+    font-family: "inter";
+    color: white;
+}
+
+.bottom-left-btn button{
+    position: absolute;
+    bottom: 30px;
+    right: 290px;
+    width: 193px;
+    height: 98px;
+    border-radius: 12px;
+background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(80px);
+color: rgba(255, 255, 255, 0.65);
+border: 1px solid rgba(255,255,255,0.1);
+
+}
+
+.image-extra-card img{
+    width: 100%;
+}
+
+/* header css design end here */
+
+
+/* change your habit design css start here */
+
+.change-habit-main-container{
+    width: 100%;
+    background-color: var(--back-color-3);
+}
+.habit-second-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.habit-text{
+    text-align: center;
+    padding-top: 120px;
+}
+.habit-text h2{
+    color: var(--font-color-2);
+    font-size: 40px;
+    font-family: "inter";
+}
+.habit-text p{
+    color: var(--font-color-3);
+    margin-top: 30px;
+    display: flex;
+    align-items:center;
+    display: block;
+}
+
+.card-container{
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+align-items: center;
+justify-content:space-around;
+padding: 50px 40px 0 40px;
+
+}
+.card-img-text{
+   
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-text-habit{
+    padding-top: 20px;
+}
+.card-text-habit h3{
+    color: var(--font-color-2);
+    text-transform: capitalize;
+}
+.card-text-habit p{
+    color: var(--font-color-3);
+}
+.card-img img{
+    border-radius: 50%;
+}
+
+.running-man-container{
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: 120px;
+   padding: 20px;
+   border-radius: 5px;
+    background: var(--back-color-5);
+
+}
+
+.runner-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.runner-text{width: 50%;}
+.runner-text h2{
+    color: var(--font-color-2);
+    font-size: 48px;
+    font-family: 'inter';
+}
+.runner-container p{
+    color: var(--font-color-3);
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+.running-igm{width: 50%;}
+.running-igm img{
+    width: 100%;
+    border-radius: 12px;
+
+    
+}
+.runnerbtn button{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    border: none;
+    background: var(--back-color-1);
+    font-size: 18px;
+    font-family: 'inter';
+    text-transform:capitalize;
+    color: var(--font-color-2);
+    
+
+}
+
+/* running section design end here */
+
+/* image gallary css design start here */
+
+.img-gallary-main{
+    color: white;
+    padding-top: 280px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: var(--back-color-3);
+}
+
+.img-container{
+    max-width: 1060px;
+    margin: 0 auto;
+   
+}
+.img-gallary-text-container{
+    font-family: 'inter';
+    padding-bottom: 130px;
+}
+.img-gallary-text-container h2{
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+.row-first{
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+}
+.image-positioning img{
+    width: 100%;
+    height: 100%;
+}
+
+.hide-item{
+    display: block;
+}
+
+.image-positioning{
+    position: relative;
+}
+.text-rely{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 255, 210, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}     
+
+.img-gally-bg{
+    background: rgba(255, 0, 0, 0.3);
+}
+.img-gally-bg-tw{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.image-last-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    padding-bottom: 50px;
+}
+.bmi-text-here{
+    font-family: 'inter';
+}
+.bmi-text-here h2{
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+/* image gallary section css design end here */
+
+
+/* Bmi calculator css design start here */
+
+.Bmi-container{
+    width: 100%;
+    background: rgb(34,34,34);
+    padding: 50px 0;
+}
+
+.main-bmi-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.bmi-calculator h2{
+padding-bottom: 20px;
+font-family: 'inter';
+color: var(--font-color-2);
+font-size: 40px;
+}
+
+table{
+    width: 400px;
+    border-collapse: collapse;
+    font-family: 'inter';
+    text-align: center;
+}
+
+th{
+    color:var(--font-color-2);
+}
+td{    color: rgba(255, 255, 255, 0.5);}
+th,td{
+
+    padding: 15px;
+    border: 1px solid var(--back-color-5);
+}
+
+.box-iput-container input{
+    width: 280px;
+    padding: 12px 40px 12px 20px;
+    border-radius: 18px;
+    border: 1px solid var(--back-color-6);
+    margin-bottom: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+.calculate-ur-bmi-text{
+    padding-bottom: 50px;
+    font-family: 'inter';
+}
+.calculate-ur-bmi-text h2{
+    color: var(--font-color-2);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.calculate-ur-bmi-text p{
+    color: var(--font-color-3);
+}
+.bmi-btn {
+    width:95%;
+    padding: 12px 40px 12px 20px;
+    border-radius: 18px;
+    border: 1px solid var(--back-color-5);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--font-color-2);
+    font-family: 'inter';
+}
+.bmi-last-btn{
+    width: 224px;
+    height: 54px;
+    text-align: center;
+    border-radius: 42px;
+    background: var(--font-color-1);
+    color: var(--font-color-2);
+    font-family: 'inter';
+    border: 1px solid var(--font-color-1);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+.Bmi-display-use{
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+/* bmi calculator design end here */
+
+/* meet our team design end here */
+
+.meet-our-team{
+    width: 100%;
+    background: var(--back-color-3);
+    padding-bottom: 60px;
+}
+
+.meet-text{
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-family: 'inter';
+}
+.meet-text h2{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.meet-team-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    background: var(--font-color-3);
+    border-radius: 12px;
+}
+.meet-team-igm{
+    position: relative;
+}
+.team-absu-text{
+    position: absolute;
+   bottom: 120px;
+   left: 30px;
+   font-family: 'inter';
+   text-transform: capitalize;
+}
+.team-absu-text h3{
+color: var(--font-color-2);
+font-size: 25px;
+}
+.team-absu-text p{
+    color: wheat;
+}
+
+.meet-team-igm img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card-container-team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 15px;
+}
+
+/* meet our team css  design end here */
+
+/* footer section design here */
+.footer-main{
+    width: 100%;
+    background: var(--back-color-5);
+}
+
+.footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'inter';
+    text-transform: capitalize;
+}
+.footer-flex h2{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.text-first h2{
+color: var(--font-color-1);
+font-style: italic;
+font-size: 40px;
+}
+.footer-flex p{
+    padding-bottom: 15px;
+}
+
+
 /* here is the responsive media queries */
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 776px) {
+ 
+    
+.image-extra-card{
+    /* margin-top: 80px; */
+}
+.runner-container{
+    flex-direction: column;
+}
+.running-igm img{
+    width: 100%;
+}
+    .banner-content{
+        flex-direction: column;
+        background-color: var(--bac-color-2);
+    }
     .nav-menu-right ul {
       display: none;
     }
@@ -109,4 +597,34 @@ display: none;
     .nav-menu-left{
         margin-left: 20px;
     }
+
+    .right-top-btn button{
+        top: 140px;
+        left: 90px;
+    }
+.left-top-btn button{
+    bottom: 86px;
+}
+.hide-item{
+    display: none;
+    border: 1px solid wheat;
+}
+.row-first{
+grid-template-columns: repeat(2,1fr);
+}
+
+.Bmi-display-use{
+    flex-direction: column;
+    margin: 0 auto;
+}
+.card-container-team{
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.footer-flex{
+    flex-direction: column;
+    padding-left: 30px;
+}
   }
+
+
